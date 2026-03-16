@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK Decor and Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Colors if needed, otherwise Tailwind handles most */
+        .bg-lavender { background-color: #E6E6FA; }
+        .text-teal-600 { color: #047857; }
+        .text-yellow-600 { color: #D97706; }
+        .bg-brown { background-color: #A0522D; } /* Example custom brown */
+        .text-custom-yellow { color: #FFFF33; } /* For nav links */
+
+        /* Basic overrides for older styles, ensure Tailwind takes precedence */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .product {
+            border: 1px solid #e2e8f0; /* Tailwind equivalent of #ccc */
+            padding: 15px;
+            margin: 15px;
+            display: inline-block;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            border-radius: 8px; /* Slightly rounded corners */
+        }
+        .product img {
+            width: 100%; /* Make images responsive within their container */
+            max-width: 200px; /* Max width for consistency */
+            height: 200px;
+            object-fit: cover; /* Ensures images cover the area without distortion */
+            border-radius: 4px; /* Slightly rounded image corners */
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 1.25rem; /* Tailwind text-xl */
+            color: #10B981; /* Tailwind green-500 */
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25D366; /* WhatsApp green */
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 9999px; /* Tailwind rounded-full */
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .whatsapp-btn:hover {
+            background: #128C7E; /* Darker WhatsApp green */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Modern Navigation Bar -->
+    <nav class="flex flex-col md:flex-row justify-between items-center px-6 md:px-10 py-4 bg-white shadow-md">
+        <h1 class="text-3xl md:text-5xl font-extrabold uppercase mb-4 md:mb-0">
+            <span class="text-teal-600">AK</span> <span class="text-yellow-600">DECOR</span>
+        </h1>
+        <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 font-medium text-lg">
+            <a href="#home" class="text-gray-700 hover:text-teal-600 transition duration-300">HOME</a>
+            <a href="#products" class="text-gray-700 hover:text-teal-600 transition duration-300">PRODUCTS</a>
+            <a href="#about" class="text-gray-700 hover:text-teal-600 transition duration-300">ABOUT</a>
+             <a href="#design" class="text-gray-700 hover:text-teal-600 transition duration-300">GYPSUM DESIGN</a>
+            <a href="#alldesign" class="text-gray-700 hover:text-teal-600 transition duration-300">ALL DESIGN</a>
+              
+          </div>
+
+       <a href="https://wa.me/96893245138?text=Hello%20AK%20Decor" class="text-green-500 hover:text-green-600 transition duration-300 font-bold">WhatsApp</a>
+            <a href="mailto:KALAM438@GMAIL.COM" class="text-blue-500 hover:text-blue-600 transition duration-300 font-bold">Email</a>
+            <a href="https://facebook.com" class="text-blue-700 hover:text-blue-800 transition duration-300">Facebook</a>
+            <a href="https://instagram.com" class="text-pink-600 hover:text-pink-700 transition duration-300">Instagram</a>
+             </div>
+
+           </nav>
+          
+        
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-teal-500 to-green-500 text-white py-20 px-6 text-center shadow-lg">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+            Welcome to <span class="text-yellow-300">AK DECOR</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+            Your destination for Premium WPC Panels, Stylish, Durable, and Eco-friendly Wall & Ceiling Solutions. Perfect for Modern Interiors at Unbeatable Prices.
+        </p>
+        <a href="#products" class="bg-yellow-400 text-gray-900 hover:bg-yellow-300 transition duration-300 px-10 py-4 rounded-full text-xl font-bold inline-block shadow-lg">
+            Explore Our Products
+        </a>
+    </section>
+
+    <!-- Contact & Quote Section -->
+    <section class="max-w-6xl mx-auto py-12 px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Let's Design Together</h2>
+            <p class="mb-3 text-lg">📍 Address: oman muscat, City </p>
+            <p class="mb-3 text-lg">📞 Call: <a href="tel:+96893245138" class="text-blue-600 hover:underline">+968 9324 5138</a></p>
+            <p class="mb-3 text-lg">✉️ Email: <a href="mailto:KALAM438@GMAIL.COM" class="text-blue-600 hover:underline">KALAM438@GMAIL.COM</a></p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-xl border-t-8 border-green-500 text-center">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Chat With Us</h3>
+            <p class="mb-6 text-gray-600">Send us your wall measurements for a free quote.</p>
+            <a href="https://wa.me/96893245138?text=I%20would%20like%20a%20free%20quote%20for%20wall%20measurements." class="bg-green-500 text-white px-8 py-4 rounded-full font-bold hover:bg-green-600 transition duration-300 shadow-md">
+                Open WhatsApp
+            </a>
+        </div>
+          </section>
+  <!-- Features -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-10 text-center">
+            <div class="p-6">
+                <div class="text-gold text-4xl mb-4">🛡️</div>
+                <h3 class="text-xl font-bold mb-2">দীর্ঘস্থায়ী ও টেকসই</h3>
+                <p class="text-gray-600">এটি পানি নিরোধক, উইপোকা ধরে না এবং আগুনের বিরুদ্ধে প্রতিরোধী।</p>
+            </div>
+            <div class="p-6">
+                <div class="text-gold text-4xl mb-4">🎨</div>
+                <h3 class="text-xl font-bold mb-2">আধুনিক ডিজাইন</h3>
+                <p class="text-gray-600">ইউরোপীয় এবং আধুনিক ঘরানার অসংখ্য কালার ও টেক্সচার।</p>
+            </div>
+            <div class="p-6">
+                <div class="text-gold text-4xl mb-4">🚚</div>
+                <h3 class="text-xl font-bold mb-2">দ্রুত সরবরাহ</h3>
+                <p class="text-gray-600">চায়না থেকে সরাসরি আমদানিকৃত পণ্য আপনার দোরগোড়ায়।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home Page Products Preview (More Visual) -->
+    <section class="max-w-7xl mx-auto py-12 px-6" id="home-products">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center text-gray-800 mb-12">
+            Featured <span class="text-teal-600">Wall Panels</span>
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <div class="product">
+                <img src="https://i.postimg.cc/9fK6LZVT/WPC-Fluted-wall-panel-in-Ikeja-Lagos-WPCWall-Panel-Home-Decor-Interior-Design-Wall-Paneling-Modern.jpgL" alt="WPC Wall Panel Design 1">
+                <h3 class="text-xl font-semibold mt-2">Elegant Wall Panel</h3>
+                <p class="text-gray-600">Modern interior solution.</p>
+                <a class="whatsapp-btn mt-4" href="https://wa.me/96893245138?text=I%20am%20interested%20in%20Elegant%20Wall%20Panel">Inquire on WhatsApp</a>
+            </div>
+            <div class="product">
+                <img [url=https://postimages.org/][img]https://i.postimg.cc/9fK6LZVT/WPC-Fluted-wall-panel-in-Ikeja-Lagos-WPCWall-Panel-Home-Decor-Interior-Design-Wall-Paneling-Modern.jpg" alt="WPC Wall Panel Design 2">
+                <h3 class="text-xl font-semibold mt-2">Contemporary Design</h3>
+                <p class="text-gray-600">Stylish & durable.</p>
+                <a class="whatsapp-btn mt-4" href="https://wa.me/96893245138?text=I%20am%20interested%20in%20Contemporary%20Design">Inquire on WhatsApp</a>
+            </div>
+            <div class="product">
+                <img src="https://images.pexels.com/photos/7045367/pexels-photo-7045367.jpeg" alt="WPC Wall Panel Design 3">
+                <h3 class="text-xl font-semibold mt-2">Textured Finish</h3>
+                <p class="text-gray-600">Adds depth to any room.</p>
+                <a class="whatsapp-btn mt-4" href="https://wa.me/96893245138?text=I%20am%20interested%20in%20Textured%20Finish">Inquire on WhatsApp</a>
+            </div>
+            <div class="product">
+                <img src="https://images.pexels.com/photos/450063/pexels-photo-450063.jpeg" alt="WPC Wall Panel Design 4">
+                <h3 class="text-xl font-semibold mt-2">Geometric Pattern</h3>
+                <p class="text-gray-600">Unique wall decor.</p>
+                <a class="whatsapp-btn mt-4" href="https://wa.me/96893245138?text=I%20am%20interested%20in%20Geometric%20Pattern">Inquire on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Products Section -->
+    <section id="products" class="max-w-7xl mx-auto py-12 px-6 bg-white shadow-lg rounded-lg my-10">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center text-gray-800 mb-12">
+            Our <span class="text-yellow-600">Products</span>
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200/FF5733/FFFFFF?text=Product+A" alt="Product A">
+                <h3 class="text-xl font-semibold mt-2">Premium Wall Panel A</h3>
+                <p class="price">OMR 5.99 / meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20want%20to%20buy%20Premium%20Wall%20Panel%20A">Contact on WhatsApp</a>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200/33FF57/000000?text=Product+B" alt="Product B">
+                <h3 class="text-xl font-semibold mt-2">WPC Ceiling Solution B</h3>
+                <p class="price">OMR 7.99 / meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20want%20to%20buy%20WPC%20Ceiling%20Solution%20B">Contact on WhatsApp</a>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200/3357FF/FFFFFF?text=Product+C" alt="Product C">
+                <h3 class="text-xl font-semibold mt-2">Decorative Fluted Panels</h3>
+                <p class="price">OMR 6.50 / meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20want%20to%20buy%20Decorative%20Fluted%20Panels">Contact on WhatsApp</a>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200/FF33A1/000000?text=Product+D" alt="Product D">
+                <h3 class="text-xl font-semibold mt-2">Outdoor WPC Cladding</h3>
+                <p class="price">OMR 9.20 / meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20want%20to%20buy%20Outdoor%20WPC%20Cladding">Contact on WhatsApp</a>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200/33FFD4/000000?text=Product+E" alt="Product E">
+                <h3 class="text-xl font-semibold mt-2">Modern Panel E</h3>
+                <p class="price">OMR 5.50 / meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20want%20to%20buy%20Modern%20Panel%20E">Contact on WhatsApp</a>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200/FF8C33/FFFFFF?text=Product+F" alt="Product F">
+                <h3 class="text-xl font-semibold mt-2">Textured Ceiling Panel F</h3>
+                <p class="price">OMR 7.10 / meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20want%20to%20buy%20Textured%20Ceiling%20Panel%20F">Contact on WhatsApp</a>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200/A133FF/FFFFFF?text=Product+G" alt="Product G">
+                <h3 class="text-xl font-semibold mt-2">Luxury Wall Accent G</h3>
+                <p class="price">OMR 8.90 / meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20want%20to%20buy%20Luxury%20Wall%20Accent%20G">Contact on WhatsApp</a>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200/FFD433/000000?text=Product+H" alt="Product H">
+                <h3 class="text-xl font-semibold mt-2">Eco-Friendly Panel H</h3>
+                <p class="price">OMR 6.20 / meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20want%20to%20buy%20Eco-Friendly%20Panel%20H">Contact on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gypsun Design Section -->
+    <section id="design" class="max-w-7xl mx-auto py-12 px-6 bg-gray-50 shadow-lg rounded-lg my-10">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center text-gray-800 mb-12">
+            Gypsun <span class="text-teal-600">Designs</span>
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200/87CEEB/FFFFFF?text=Gypsum+Design+1" alt="Gypsum Design 1">
+                <h3 class="text-xl font-semibold mt-2">Modern Gypsum Ceiling</h3>
+                <p class="price">OMR 12.00 / sq. meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20am%20interested%20in%20Modern%20Gypsum%20Ceiling">Inquire on WhatsApp</a>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200/FFA07A/000000?text=Gypsum+Design+2" alt="Gypsum Design 2">
+                <h3 class="text-xl font-semibold mt-2">Intricate Wall Gypsum</h3>
+                <p class="price">OMR 15.00 / sq. meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20am%20interested%20in%20Intricate%20Wall%20Gypsum">Inquire on WhatsApp</a>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200/90EE90/000000?text=Gypsum+Design+3" alt="Gypsum Design 3">
+                <h3 class="text-xl font-semibold mt-2">Custom Gypsum Partition</h3>
+                <p class="price">OMR 18.00 / sq. meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20am%20interested%20in%20Custom%20Gypsum%20Partition">Inquire on WhatsApp</a>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200/DA70D6/FFFFFF?text=Gypsum+Design+4" alt="Gypsum Design 4">
+                <h3 class="text-xl font-semibold mt-2">LED Integrated Gypsum</h3>
+                <p class="price">OMR 20.00 / sq. meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20am%20interested%20in%20LED%20Integrated%20Gypsum">Inquire on WhatsApp</a>
+            </div>
+      <div class="product">
+                <img src="https://via.placeholder.com/200x200/DA70D6/FFFFFF?text=Gypsum+Design+4" alt="Gypsum Design 4">
+                <h3 class="text-xl font-semibold mt-2">LED Integrated Gypsum</h3>
+                <p class="price">OMR 20.00 / sq. meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20am%20interested%20in%20LED%20Integrated%20Gypsum">Inquire on WhatsApp</a>
+            </div>
+<div class="product">
+                <img src="https://via.placeholder.com/200x200/DA70D6/FFFFFF?text=Gypsum+Design+4" alt="Gypsum Design 4">
+                <h3 class="text-xl font-semibold mt-2">LED Integrated Gypsum</h3>
+                <p class="price">OMR 20.00 / sq. meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20am%20interested%20in%20LED%20Integrated%20Gypsum">Inquire on WhatsApp</a>
+            </div>
+<div class="product">
+                <img src="https://via.placeholder.com/200x200/DA70D6/FFFFFF?text=Gypsum+Design+4" alt="Gypsum Design 4">
+                <h3 class="text-xl font-semibold mt-2">LED Integrated Gypsum</h3>
+                <p class="price">OMR 20.00 / sq. meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20am%20interested%20in%20LED%20Integrated%20Gypsum">Inquire on WhatsApp</a>
+            </div>
+<div class="product">
+                <img src="https://via.placeholder.com/200x200/DA70D6/FFFFFF?text=Gypsum+Design+4" alt="Gypsum Design 4">
+                <h3 class="text-xl font-semibold mt-2">LED Integrated Gypsum</h3>
+                <p class="price">OMR 20.00 / sq. meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20am%20interested%20in%20LED%20Integrated%20Gypsum">Inquire on WhatsApp</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- All Designs Section (Combined Gypsum and WPC for broader showcase) -->
+    <section id="alldesign" class="max-w-7xl mx-auto py-12 px-6 bg-white shadow-lg rounded-lg my-10">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center text-gray-800 mb-12">
+            All Our <span class="text-yellow-600">Designs</span>
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Example WPC Panels -->
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200/F08080/FFFFFF?text=WPC+Design+A" alt="WPC Design A">
+                <h3 class="text-xl font-semibold mt-2">Classic WPC Wall</h3>
+                <p class="price">OMR 6.00 / meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20am%20interested%20in%20Classic%20WPC%20Wall">Inquire on WhatsApp</a>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200/20B2AA/FFFFFF?text=WPC+Design+B" alt="WPC Design B">
+                <h3 class="text-xl font-semibold mt-2">Modern Ceiling Design</h3>
+                <p class="price">OMR 8.50 / meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20am%20interested%20in%20Modern%20Ceiling%20Design">Inquire on WhatsApp</a>
+            </div>
+            <!-- Example Gypsum Designs -->
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200/B0C4DE/000000?text=Gypsum+Feature+C" alt="Gypsum Feature C">
+                <h3 class="text-xl font-semibold mt-2">Feature Wall Gypsum</h3>
+                <p class="price">OMR 16.00 / sq. meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20am%20interested%20in%20Feature%20Wall%20Gypsum">Inquire on WhatsApp</a>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200/D8BFD8/000000?text=Gypsum+Cove+D" alt="Gypsum Cove D">
+                <h3 class="text-xl font-semibold mt-2">Cove Lighting Gypsum</h3>
+                <p class="price">OMR 14.00 / sq. meter</p>
+                <a class="whatsapp-btn" href="https://wa.me/96893245138?text=I%20am%20interested%20in%20Cove%20Lighting%20Gypsum">Inquire on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="max-w-7xl mx-auto py-12 px-6 bg-gray-50 shadow-lg rounded-lg my-10 text-gray-800">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center text-gray-800 mb-12">
+            About <span class="text-teal-600">Us</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div class="space-y-6">
+                <p class="text-lg leading-relaxed">
+                    Wood-Plastic Composite (WPC) has become the gold standard for sustainable, low-maintenance home improvement. In 2026, the market is shifting toward high-definition textures and "capped" technology that offers superior UV protection.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    If you are looking for WPC products currently on sale or planning a project, here is a comprehensive guide to what is available, current pricing trends, and why these products are a smart investment.
+                </p>
+                <h3 class="text-2xl font-bold mt-6 mb-4">Popular WPC Products on Sale:</h3>
+                <ul class="list-disc list-inside space-y-3 text-lg">
+                    <li>
+                        <strong>WPC Decking:</strong> The most popular application. Look for Co-extruded (Capped) Decking, which has an extra protective shield. Standard "hollow" boards are often the most affordable and frequently go on sale for DIY projects.
+                    </li>
+                    <li>
+                        <strong>WPC Wall Panels (Cladding):</strong> Both indoor and outdoor versions are trending. Fluted wall panels (with a ribbed texture) are currently a top-selling interior design choice for accent walls.
+                    </li>
+                    <li>
+                        <strong>WPC Fencing:</strong> Offers the privacy of wood without the risk of rot. 2026 trends favor "matte" finishes that mimic charcoal and teak.
+                    </li>
+                    <li>
+                        <strong>WPC DIY Floor Tiles:</strong> These are interlocking squares (usually 12x12 inches) that can be snapped together over an existing patio or balcony. They are often the most common "clearance" item for quick home refreshes.
+                    </li>
+                </ul>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="product !w-full !m-0">
+                    <img src="https://via.placeholder.com/300x200/8B4513/FFFFFF?text=About+Image+1" alt="About Image 1">
+                    <h3 class="text-xl font-semibold mt-2">Quality Craftsmanship</h3>
+                </div>
+                <div class="product !w-full !m-0">
+                    <img src="https://via.placeholder.com/300x200/6A5ACD/FFFFFF?text=About+Image+2" alt="About Image 2">
+                    <h3 class="text-xl font-semibold mt-2">Sustainable Solutions</h3>
+                </div>
+                <div class="product !w-full !m-0">
+                    <img src="https://via.placeholder.com/300x200/CD853F/FFFFFF?text=About+Image+3" alt="About Image 3">
+                    <h3 class="text-xl font-semibold mt-2">Expert Team</h3>
+                </div>
+                 <div class="product !w-full !m-0">
+                    <img src="https://via.placeholder.com/300x200/DEB887/FFFFFF?text=About+Image+4" alt="About Image 4">
+                    <h3 class="text-xl font-semibold mt-2">Customer Satisfaction</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 text-center">
+        <div class="footer-social flex justify-center space-x-6 mb-4">
+            <p class="text-lg">Contact us:</p>
+            <a href="https://wa.me/96893245138?text=Hello%20AK%20Decor%20Online%20Store" class="text-green-400 hover:text-green-300 transition duration-300 text-lg">WhatsApp</a>
+            <a href="mailto:KALAM438@GMAIL.COM" class="text-blue-400 hover:text-blue-300 transition duration-300 text-lg">Email</a>
+            <a href="https://facebook.com" class="text-blue-600 hover:text-blue-500 transition duration-300 text-lg">Facebook</a>
+            <a href="https://instagram.com" class="text-pink-500 hover:text-pink-400 transition duration-300 text-lg">Instagram</a>
+        </div>
+        <p class="text-gray-400 text-sm">&copy; AK Decor. All rights reserved. We sell all products at wholesale prices.</p>
+    </footer>
+
+</body>
+</html>
